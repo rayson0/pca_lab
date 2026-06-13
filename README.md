@@ -2,7 +2,7 @@
 
 ## 📂 Структура проекта
 
-├── easy.py
+├── easy.py\n
 ├── tests_easy.py
 ├── normal.py
 ├── tests_normal.py
