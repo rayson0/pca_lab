@@ -33,7 +33,7 @@ def pca(X:'Matrix', k: int = 0) -> Tuple['Matrix', float]:
 
     share = explained_variance_ratio(eigenvalues, k_optimization)
 
-    return (X_pca, share)
+    return X_pca, share
 
 
 def plot_pca_projection(X_proj:'Matrix') -> Figure:

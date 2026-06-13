@@ -93,17 +93,12 @@ def center_data(X):
     Вход: матрица данных X (n×m)
     Выход: центрированная матрица X_centered (n×m)
     """
-    if not X:
-        return 0
-    
     sum = 0
     n = len(X)
     m = len(X[0])
     for row in range(n):
         for col in range(m):
-            sum += X[row][col]
-
-    
+            sum += X[row][col]    
 
     X_new = []
     for row in range(n):
@@ -117,10 +112,7 @@ def covariance_matrix(X_centered):
     """
     Вход: центрированная матрица X_centered (n×m)
     Выход: матрица ковариаций C (m×m)
-    """
-    if not X_centered:
-        return 0
-    
+    """    
     n = len(X_centered)
     m = len(X_centered[0])
     C = []
